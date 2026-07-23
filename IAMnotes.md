@@ -2,11 +2,11 @@
 
 ## best Practices
 
-### 1. Use `aws_iam_policy_document` Whenever Possible
+### Use `aws_iam_policy_document` Whenever Possible
 
 Generate IAM policies using Terraform instead of hardcoding JSON. This provides validation, improves readability, and makes policies easier to maintain.
 
-### 2. Follow the Principle of Least Privilege
+### Follow the Principle of Least Privilege
 
 Grant only the permissions required for the resource or service to perform its task. Avoid wildcard permissions such as:
 
@@ -17,11 +17,11 @@ Grant only the permissions required for the resource or service to perform its t
 
 unless they are absolutely necessary.
 
-### 3. Separate IAM Roles and Policies
+### Separate IAM Roles and Policies
 
 Create IAM roles, IAM policies, and policy attachments as separate Terraform resources. This improves reusability, simplifies management, and keeps your infrastructure modular.
 
-### 4. Scope Resources Explicitly
+### Scope Resources Explicitly
 
 Reference specific AWS resource ARNs whenever possible instead of using `"*"`. Examples include:
 
@@ -33,7 +33,7 @@ Reference specific AWS resource ARNs whenever possible instead of using `"*"`. E
 
 Restricting resources reduces unnecessary access and improves security.
 
-### 5. Use Variables and Terraform References
+###  Use Variables and Terraform References
 
 Build policies dynamically using Terraform resource references and variables instead of hardcoded values.
 
