@@ -148,4 +148,4 @@ data "aws_iam_policy_document" "ses_policy" {
 
 Allows an application or Lambda function to send emails through Amazon Simple Email Service (SES).
 
-> **Note:** SES policies commonly use `"Resource": "*"` because email sending isn't always tied to a specific resource ARN. Whenever possible, further restrict access using IAM conditions.
+> **Note:** SES policies commonly use `"Resource": "*"` because email sending isn't always tied to a specific resource ARN. if possible restrict more access using IAM conditions.
